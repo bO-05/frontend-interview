@@ -6,11 +6,6 @@ import { useFilterStore } from '@/store/filter'
 import { ProductCard } from './ProductCard'
 import { Product } from '@/mocks/products'
 
-interface ProductsResponse {
-  products: Product[]
-  nextCursor?: string
-}
-
 export function ProductGrid() {
   const search = useSearchStore((state) => state.search)
   const filters = useFilterStore()
